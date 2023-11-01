@@ -1,8 +1,14 @@
+html {
+    background-color: #353535;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 .grid-container {
@@ -12,7 +18,78 @@ body {
     border: 1px solid black;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 16px;
+}
+
 h6 {
     display: flex;
     justify-content: center;
+    font-size: 24px;
+    margin: 12px;
+}
+
+.sizes {
+    margin: 16px;
+}
+
+.controls {
+    margin: 16px;
+}
+
+button {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 16px;
+    font-weight: 900;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.size-btn {
+    background-color: wheat;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.gray {
+    background-color: gray;
+    color: white;
+}
+
+.rainbow {
+    background-image: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
+    color: white;
+}
+
+.rainbow:hover {
+    animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+.erase {
+    background-color: #dbb7bb;
+    color: black;
+}
+
+.clear:hover {
+    background-color: black;
+    color: white;
 }
