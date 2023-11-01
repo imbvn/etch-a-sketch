@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Etch-A-Sketch</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
     </head>
 
     <body>
@@ -12,26 +13,26 @@
         <div class="sizes">
             <h6>Select the size</h6>
             <div class="size-btns">
-                <button onclick="createGrid(8)">8x8</button>
-                <button onclick="createGrid(12)">12x12</button>
-                <button onclick="createGrid(16)">16x16</button>
-                <button onclick="createGrid(24)">24x24</button>
-                <button onclick="createGrid(36)">36x36</button>
-                <button onclick="createGrid(48)">48x48</button>
-                <button onclick="createGrid(60)">60x60</button>
-                <button onclick="createGrid(72)">72x72</button>
-                <button onclick="createGrid(84)">84x84</button>
-                <button onclick="createGrid(96)">96x96</button>
-                <button onclick="createGrid(100)">100x100</button>
+                <button class="size-btn" onclick="createGrid(8)">8x8</button>
+                <button class="size-btn" onclick="createGrid(12)">12x12</button>
+                <button class="size-btn" onclick="createGrid(16)">16x16</button>
+                <button class="size-btn" onclick="createGrid(24)">24x24</button>
+                <button class="size-btn" onclick="createGrid(36)">36x36</button>
+                <button class="size-btn" onclick="createGrid(48)">48x48</button>
+                <button class="size-btn" onclick="createGrid(60)">60x60</button>
+                <button class="size-btn" onclick="createGrid(72)">72x72</button>
+                <button class="size-btn" onclick="createGrid(84)">84x84</button>
+                <button class="size-btn" onclick="createGrid(96)">96x96</button>
+                <button class="size-btn" onclick="createGrid(100)">100x100</button>
             </div>
         </div>
         <div class="grid-container"></div>
         <div class="controls">
-            <button onclick="changeColor('black')">Black</button>
-            <button onclick="changeColor('gray')">Gray</button>
-            <button onclick="changeColor('rainbow')">Rainbow</button>
-            <button onclick="changeColor('white')">Erase</button>
-            <button onclick="resetBoard()">Clear</button>
+            <button class="colors black" onclick="changeColor('black')">Black</button>
+            <button class="colors gray" onclick="changeColor('gray')">Gray</button>
+            <button class="colors rainbow" onclick="changeColor('rainbow')">Rainbow</button>
+            <button class="colors erase" onclick="changeColor('white')">Erase</button>
+            <button class="colors clear" onclick="resetBoard()">Clear</button>
         </div>
         <script src="script.js"></script>
     </body>
